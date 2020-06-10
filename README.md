@@ -1,4 +1,5 @@
 # Fault-injection-into-Neural-Networks
+
 Code for fault injection into neural networks with reconfigurable fault rates.
 
 To inject faults into a certain network follow these steps:
@@ -7,7 +8,8 @@ To inject faults into a certain network follow these steps:
 %python NN_fault_Injection.py <layer1_weight_matrix_filename> .... <layern_weight_matrix_filename> <quantization> <fault-rate>
 3. The program creates two sets of files for each layer with "defectmap" and "faulty" prefixes that respectively include the generated defect map for each layer and the faulty weights.
 
-Example:
+# Example:
+
 The directory contains two files "testlayer1.txt" and "testlayer2.txt" each of which includes a weight matrix for one of the two layers of the target 12-bit quantized NN. The following command injects 0.01 faults into these layers:
 %python NN_fault_Injection.py testlayer1.txt testlayer2.txt 12 0.01
 
