@@ -7,7 +7,7 @@ To inject faults into a certain network follow these steps:
 
 2. Run following command to inject x% faults into an N bit each layer:
 
-%python NN_fault_Injection.py <layer1_weight_matrix_filename> .... <layern_weight_matrix_filename>  <quantization>  <fault-rate>
+%python NN_fault_Injection.py <layer1_weight_matrix_filename> .... <layern_weight_matrix_filename>  <quantization>  
 
 3. The program creates two sets of files for each layer with "defectmap" and "faulty" prefixes that respectively include the generated defect map for each layer and the faulty weights.
 
